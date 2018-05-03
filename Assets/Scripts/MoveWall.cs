@@ -11,6 +11,7 @@ public class MoveWall : MonoBehaviour {
 		rigispeed.z = speed * dir;
 		wall.velocity = rigispeed;
 	}
+	//Collision
 	void OnCollisionEnter(Collision col){
 		dir = -dir;
 		if(col.gameObject.tag=="Player"){
